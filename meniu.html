@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $(".a").on({
+        click: function(){
+			$(".a").removeClass("active");
+			$(".active").removeClass("active");
+			$(this).addClass("active");
+        }
+    });
+	$(".active").on({
+        click: function(){
+			$(".a").removeClass("active");
+			$(".active").removeClass("active");
+			$(this).addClass("active");
+        }
+    });
+});
+</script>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	
+  
+}
+
+li {
+    float:right;
+	
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 32px 30px;
+    text-decoration: none;
+	active: background-color: #ffe0c2;
+}
+
+li a:hover,
+li a.active {
+    background-color:	#ffe0c2;
+}
+
+</style>
+<style>
+	.responsive {
+			padding: 0 6px;
+			float: left;
+			width: 24.99999%;
+		}
+
+		@media only screen and (max-width: 700px){
+			.responsive {
+				width: 49.99999%;
+				margin: 6px 0;
+			}
+		}
+
+		@media only screen and (max-width: 500px){
+			.responsive {
+				width: 100%;
+			}
+		}
+
+		.clearfix:after {
+			content: "";
+			display: table;
+			clear: both;
+			}
+		.aa{
+			 background-color:	#ffffff;
+			}
+		
+</style>
+
+</head>
+<body > 
+						<div class="responsive">
+						<img src="aa.gif" style="max-width:100%; height:auto;">
+						</div>
+						
+<ul>
+      
+	  <li><a href="contact.html" target="frame" class="a"> CONTACT</a></li>
+	  <li><a href="evenimente.html" target="frame" class="a">EVENIMENTE</a></li>
+	  <li><a href="galeriefoto.html" target="frame" class="a">GALERIE FOTO</a></li>
+	  <li><a href="desprenoi.html" target="frame" class="a">DESPRE NOI</a></li>
+	  <li><a href="home.html" target="frame" class="active">ACASĂ</a></li>
+	  
+	  
+	  
+</ul>
+</body>
+</html>
